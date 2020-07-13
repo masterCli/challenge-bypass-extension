@@ -1,0 +1,44 @@
+CHARTER.md
+Exception timestamp: Fri Jul 03 16:48:21 GMT+02:00 2020
+
+Version: 3.7.1.R-87 (31200225)
+
+Version Code: 31200225
+
+Trace ID: CT-XPJUBE
+
+Информация не может быть выслана на мобильный телефон, так как дневной лимит бесплатных SMS-сообщений исчерпан!
+revert-3-superfon-patch-1
+Stacktrace:
+
+com.webmoney.my.net.cmd.err.WMError: Информация не может быть выслана на мобильный телефон, так как дневной лимит бесплатных SMS-сообщений исчерпан!
+
+	at com.webmoney.my.net.cmd.WMCommandResult.a(SourceFile:348)	at com.webmoney.my.net.cmd.WMCommandResult.processCommandSpecificData(SourceFile:214)
+
+	at eu.livotov.labs.android.robotools.api.RTApiCommandResult.loadResponseData(SourceFile:16)
+
+	at eu.livotov.labs.android.robotools.api.RTApiCommand.parseServerResponseData(SourceFile:110)
+
+	at eu.livotov.labs.android.robotools.api.RTApiClient.execute(SourceFile:233)
+
+	at com.webmoney.my.net.WMClient.execute(SourceFile:82)
+
+	at eu.livotov.labs.android.robotools.api.RTApiCommand.execute(SourceFile:163)
+
+	at com.webmoney.my.v3.presenter.signup.SignupSigninPresenter$4.doInBackground(SourceFile:173)
+
+	at eu.livotov.labs.android.robotools.async.RTAsyncTaskNG.executeOnBackground(SourceFile:36)
+
+	at eu.livotov.labs.android.robotools.async.RTAsyncTaskNG.access$executeOnBackground(SourceFile:21)
+
+	at eu.livotov.labs.android.robotools.async.RTAsyncTaskNG$execute$1$1.invokeSuspend(SourceFile:52)
+
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(SourceFile:33)
+
+	at kotlinx.coroutines.DispatchedTask.run(SourceFile:241)
+
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1133)
+
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:607)
+
+	at java.lang.Thread.run(Thread.java:776)
